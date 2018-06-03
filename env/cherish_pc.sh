@@ -43,12 +43,12 @@ yes | sudo apt-get install git
 git config --global user.name "Cherish"
 git config --global user.email "cherishgww@gmail.com"
 
-echo '[url "ssh://Cherish@turtles.ninjia.cmcm.com:29418"]
-	insteadOf = http://turtles.ninjia.cmcm.com/gerrit' >> ~/.gitconfig
-echo '[review "turtles.ninjia.cmcm.com/gerrit"]
-	username = Cherish' >> ~/.gitconfig
-echo '[review "turtles.ninjia.cmcm.com/gerrit"]
-	username = Cherish' >> ~/.gitconfig
+#echo '[url "ssh://Cherish@turtles.ninjia.cmcm.com:29418"]
+#	insteadOf = http://turtles.ninjia.cmcm.com/gerrit' >> ~/.gitconfig
+#echo '[review "turtles.ninjia.cmcm.com/gerrit"]
+#	username = Cherish' >> ~/.gitconfig
+#echo '[review "turtles.ninjia.cmcm.com/gerrit"]
+#	username = Cherish' >> ~/.gitconfig
 
 echo '[alias]
 	br = branch
@@ -106,11 +106,11 @@ yes | sudo apt-get install libc6:i386 lib32ncurses5
 
 yes | sudo apt-get install unrar
 
-echo 'install some libs for android'
-yes | sudo apt-get install git-core gnupg flex bison gperf build-essential \
-             zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
-             lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
-             libgl1-mesa-dev libxml2-utils xsltproc unzip device-tree-compiler
+#echo 'install some libs for android'
+#yes | sudo apt-get install git-core gnupg flex bison gperf build-essential \
+#             zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+#             lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
+#             libgl1-mesa-dev libxml2-utils xsltproc unzip device-tree-compiler
 
 #echo 'install openjdk-7'
 #yes | sudo apt-get install openjdk-7-jre openjdk-7-jdk
@@ -134,17 +134,17 @@ Y | sudo apt-get install llvm build-essential
 yes | sudo apt-get install tree
 yes | sudo apt-get install meld
 
-echo 'install opencv'
-yes | sudo apt-get build-dep opencv
+#echo 'install opencv'
+#yes | sudo apt-get build-dep opencv
 
-echo '/****************************************************************/'
-echo '/*         Hello Sir if you want connect to our server          */'
-echo '/*         please add blew message to /etc/hosts                */'
-echo '172.18.193.21 turtles.ninjia.cmcm.com'
-echo '10.60.82.30 gerrit.kisops.com'
-echo '/****************************************************************/'
-
-echo '/*                        System Init Done                      */'
-
+#echo '/****************************************************************/'
+#echo '/*         Hello Sir if you want connect to our server          */'
+#echo '/*         please add blew message to /etc/hosts                */'
+#echo '172.18.193.21 turtles.ninjia.cmcm.com'
+#echo '10.60.82.30 gerrit.kisops.com'
+#echo '/****************************************************************/'
+#
+#echo '/*                        System Init Done                      */'
+#
 cd ..
 
