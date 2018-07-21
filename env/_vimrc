@@ -1,7 +1,7 @@
 
 " Vundle manage
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype plugin on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -160,3 +160,9 @@ let g:miniBufExplMapWindowNavArrows = 1
  " A, c和h文件切换
  "--------------------------------------------------------------------------------
 nnoremap <silent> <F12> :A<CR>
+
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+filetype plugin on
