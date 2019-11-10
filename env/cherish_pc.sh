@@ -75,15 +75,7 @@ yes | sudo apt-get install gcc-arm-linux-gnueabi
 yes | sudo apt-get install gcc-arm-linux-gnueabihf
 yes | sudo apt-get install gcc-arm-none-eabi
 
-yes | sudo apt-get install cmake autoconf automake
-
-# kicad
-Y | sudo apt install --install-suggests kicad
-mkdir ~/kicad_lib
-git clone https://github.com/KiCad/kicad-symbols.git ~/kicad_lib/kicad-symbols
-git clone https://github.com/KiCad/kicad-footprints.git ~/kicad_lib/kicad-footprints
-git clone https://github.com/KiCad/kicad-packages3D.git ~/kicad_lib/kicad-packages3D
-git clone https://github.com/KiCad/kicad-templates.git ~/kicad_lib/kicad-templates
+yes | sudo apt-get install cmake autoconf automakex
 
 cd temp/
 if [ -f temp/google-chrome-stable_current_amd64.deb ];
@@ -134,7 +126,13 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 source ~/.zshrc
 
-
+# kicad
+Y | sudo apt install --install-suggests kicad
+mkdir ~/kicad_lib
+git clone https://github.com/KiCad/kicad-symbols.git ~/kicad_lib/kicad-symbols
+git clone https://github.com/KiCad/kicad-footprints.git ~/kicad_lib/kicad-footprints
+git clone https://github.com/KiCad/kicad-packages3D.git ~/kicad_lib/kicad-packages3D
+git clone https://github.com/KiCad/kicad-templates.git ~/kicad_lib/kicad-templates
 
 #echo 'install opencv'
 #yes | sudo apt-get build-dep opencv
