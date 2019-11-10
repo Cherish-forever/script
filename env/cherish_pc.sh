@@ -35,13 +35,13 @@ echo '         :,, , ::::::::i:::i:::i:i::,,,,,:,::i:i:::iir;@Secbone.ii:::'
 echo '	'
 echo '-->'
 
+sudo add-apt-repository --yes ppa:js-reynaud/kicad-5.1
 sudo apt-get update
 
-yes | sudo apt-get install vim
-
+# git
 yes | sudo apt-get install git
 git config --global user.name "Cherish"
-git config --global user.email "cherishgww@gmail.com"
+git config --global user.email "851153978@qq.com"
 
 #echo '[url "ssh://Cherish@turtles.ninjia.cmcm.com:29418"]
 #	insteadOf = http://turtles.ninjia.cmcm.com/gerrit' >> ~/.gitconfig
@@ -59,19 +59,10 @@ echo '[alias]
 echo '[color]
 	ui = auto' >> ~/.gitconfig
 
-yes | sudo apt-get install emacs
-mkdir temp
-cd temp
-git clone https://github.com/jcadam/pemacs.git
-cd pemacs
-cp _emacs ~/.emacs
-rm -rf ~/.emacs.d
-cp -rf _emacs.d/ ~/.emacs.d
+yes | sudo apt-get install vim emacs
 
-
-yes | sudo apt-get install qemu
-yes | sudo apt-get install qemu-system-x86
-yes | sudo apt-get install qemu-system-arm
+# quem
+#yes | sudo apt-get install qemu qemu-system-x86 qemu-system-arm
 
 yes | sudo apt-get install libusb-dev
 yes | sudo apt-get install libusb-1.0-0-dev
@@ -84,12 +75,15 @@ yes | sudo apt-get install gcc-arm-linux-gnueabi
 yes | sudo apt-get install gcc-arm-linux-gnueabihf
 yes | sudo apt-get install gcc-arm-none-eabi
 
-yes | sudo apt-get install cmake
-yes | sudo apt-get install autoconf
-yes | sudo apt-get install automake
-yes | sudo apt-get install unity-tweak-tool
+yes | sudo apt-get install cmake autoconf automake
 
-
+# kicad
+Y | sudo apt install --install-suggests kicad
+mkdir ~/kicad_lib
+git clone https://github.com/KiCad/kicad-symbols.git ~/kicad_lib/kicad-symbols
+git clone https://github.com/KiCad/kicad-footprints.git ~/kicad_lib/kicad-footprints
+git clone https://github.com/KiCad/kicad-packages3D.git ~/kicad_lib/kicad-packages3D
+git clone https://github.com/KiCad/kicad-templates.git ~/kicad_lib/kicad-templates
 
 cd temp/
 if [ -f temp/google-chrome-stable_current_amd64.deb ];
@@ -126,13 +120,21 @@ yes | sudo apt-get install unrar
 
 echo 'install....'
 yes | sudo apt-get install ant cmake zlib1g-dev libtbb-dev libglew-dev libudev-dev freeglut3-dev ssh automake autoconf qt5-qmake libglew-dev freeglut3-dev libboost-all-dev
-
 Y | sudo apt-get install python3-dev python3-pip python3-tk python3-lxml python3-six
-
 Y | sudo apt-get install llvm build-essential
 
-yes | sudo apt-get install tree
-yes | sudo apt-get install meld
+sudo pip install shadowsocks you-get
+
+# tools
+yes | sudo apt-get install tree meld spyder ack-grep silversearcher-ag htop fd-find unity-tweak-tool
+alias top="sudo htop"
+
+# ctrl + R
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+source ~/.zshrc
+
+
 
 #echo 'install opencv'
 #yes | sudo apt-get build-dep opencv
