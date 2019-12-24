@@ -44,7 +44,7 @@
 ;;; Preparation functions:
 
 ;; Currently needed for `org-export-preprocess-string'
-;;;(require 'org-exp)
+(require 'org-exp)
 
 (defvar org-export-structure nil)
 (defvar org-export-content nil)

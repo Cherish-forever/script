@@ -4,7 +4,7 @@
 
 ;; Author:  Pavel Kobyakov <pk_at_work@yahoo.com>
 ;; Maintainer: Sam Graham <libflymake-emacs BLAHBLAH illusori.co.uk>
-;; Version: 0.4.16
+;; Version: 0.4.13
 ;; Keywords: c languages tools
 
 ;; This file is part of GNU Emacs.
@@ -124,14 +124,8 @@ if ARG is omitted or nil."
                      (not flymake-timer))
             (setq flymake-timer (run-at-time nil 1 'flymake-on-timer-event)))
 
-          (when (and flymake-start-syntax-check-on-find-file
-                     ;; Since we write temp files in current dir, there's no point
-                     ;; trying if the directory is read-only (bug#8954).
-                     (or (not flymake-run-in-place)
-                         (file-writable-p (file-name-directory buffer-file-name)))
-                     (file-readable-p (file-name-directory buffer-file-name)))
-            (with-demoted-errors
-              (flymake-start-syntax-check))))))
+          (when flymake-start-syntax-check-on-find-file
+            (flymake-start-syntax-check)))))
 
     ;; Turning the mode OFF.
     (t
@@ -439,7 +433,7 @@ Return its file name if found, or nil if not found."
   (or (flymake-get-buildfile-from-cache source-dir-name)
       (let* ((file (locate-dominating-file source-dir-name buildfile-name)))
         (if file
-            (let* ((file (file-truename file)))
+            (progn
               (flymake-log 3 "found buildfile at %s" file)
               (flymake-add-buildfile-to-cache source-dir-name file)
               file)
@@ -1975,7 +1969,7 @@ Return full-name.  Names are real, not patched."
         (list "-s"
               "-C"
               base-dir
-              (concat "CHK_SOURCES=" (shell-quote-argument source))
+              (concat "CHK_SOURCES=" source)
               "SYNTAX_CHECK_MODE=1"
               "check-syntax")))
 
@@ -1983,7 +1977,7 @@ Return full-name.  Names are real, not patched."
   (list "ant"
         (list "-buildfile"
               (concat base-dir "/" "build.xml")
-              (concat "-DCHK_SOURCES=" (shell-quote-argument source))
+              (concat "-DCHK_SOURCES=" source)
               "check-syntax")))
 
 (defun flymake-simple-make-init-impl (create-temp-f use-relative-base-dir use-relative-source build-file-name get-cmdline-f)
