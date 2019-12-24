@@ -134,6 +134,9 @@ git clone https://github.com/KiCad/kicad-footprints.git ~/kicad_lib/kicad-footpr
 git clone https://github.com/KiCad/kicad-packages3D.git ~/kicad_lib/kicad-packages3D
 git clone https://github.com/KiCad/kicad-templates.git ~/kicad_lib/kicad-templates
 
+# SimplicityStudio_v4
+Y | sudo apt-get install libwebkitgtk-1.0-0
+
 #echo 'install opencv'
 #yes | sudo apt-get build-dep opencv
 
