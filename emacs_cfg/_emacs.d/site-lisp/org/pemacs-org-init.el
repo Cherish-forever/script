@@ -40,7 +40,7 @@
 (setq org-ditaa-jar-path
       (expand-file-name
        "~/.emacs.d/scripts/ditaa.jar"))
-;;;(require 'org-exp-blocks)
+(require 'org-exp-blocks)
 
 (provide 'pemacs-org-init)
 ;;; pemacs-org-init.el ends here

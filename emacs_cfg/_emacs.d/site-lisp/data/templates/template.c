@@ -1,26 +1,35 @@
 /*
  * %file%
+ *   Author: %name% %mail%
  *
- * Copyright (c) %cyear% %name%
+ * Syrius Robotics Ltd. Co. CONFIDENTIAL
  *
- * Authors:
- *     %name% %mail%
+ * Unpublished Copyright (c) 2018 - 2019 [Syrius Robotics Ltd. Co.],
+ * All Rights Reserved.
  *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
+ * NOTICE: All information contained herein is, and remains the property of
+ * Syrius Robotics Ltd. Co. The intellectual and technical concepts contained
+ * herein are proprietary to Syrius Robotics Ltd. Co. and may be covered by
+ * U.S., P.R.China and Foreign Patents, patents in process, and are protected
+ * by trade secret or copyright law.  Dissemination of this information or
+ * reproduction of this material is strictly forbidden unless prior written
+ * permission is obtained from Syrius Robotics Ltd. Co..  Access to the source
+ * code contained herein is hereby forbidden to anyone except current Syrius
+ * Robotics Ltd. Co. employees, managers or contractors who have executed
+ * Confidentiality and Non-disclosure agreements explicitly covering such
+ * access.
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- *
+ * The copyright notice above does not evidence any actual or intended
+ * publication or disclosure of this source code, which includes information
+ * that is confidential and/or proprietary, and is a trade secret, of Syrius
+ * Robotics Ltd. Co..  ANY REPRODUCTION, MODIFICATION, DISTRIBUTION, PUBLIC
+ * PERFORMANCE, OR PUBLIC DISPLAY OF OR THROUGH USE OF THIS SOURCE CODE WITHOUT
+ * THE EXPRESS WRITTEN CONSENT OF COMPANY IS STRICTLY PROHIBITED, AND IN
+ * VIOLATION OF APPLICABLE LAWS AND INTERNATIONAL TREATIES.  THE RECEIPT OR
+ * POSSESSION OF THIS SOURCE CODE AND/OR RELATED INFORMATION DOES NOT CONVEY OR
+ * IMPLY ANY RIGHTS TO REPRODUCE, DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO
+ * MANUFACTURE, USE, OR SELL ANYTHING THAT IT MAY DESCRIBE, IN WHOLE OR IN
+ * PART.
  */
 
 #include "%file-without-ext%.h"

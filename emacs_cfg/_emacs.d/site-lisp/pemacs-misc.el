@@ -28,5 +28,4 @@
   (setq blink-matching-parent nil))
 
 (mis-setting)
-
 (provide 'pemacs-misc)
