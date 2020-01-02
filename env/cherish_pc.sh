@@ -75,7 +75,9 @@ yes | sudo apt-get install gcc-arm-linux-gnueabi
 yes | sudo apt-get install gcc-arm-linux-gnueabihf
 yes | sudo apt-get install gcc-arm-none-eabi
 
-yes | sudo apt-get install cmake autoconf automakex
+yes | sudo apt-get install cmake autoconf automakex autoconf-archive autopoint
+
+yes | sudo apt install libssl-dev pkg-config
 
 cd temp/
 if [ -f temp/google-chrome-stable_current_amd64.deb ];
