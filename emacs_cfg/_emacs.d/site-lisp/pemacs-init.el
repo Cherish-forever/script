@@ -19,6 +19,7 @@
 (require 'pemacs-completing)
 (require 'pemacs-vcs)
 (require 'pemacs-auxiliary)
+(require 'kernel-c-style)
 
 ;; for each major mode
 (require 'pemacs-cc-edit)
