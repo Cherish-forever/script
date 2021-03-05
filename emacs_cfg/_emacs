@@ -29,7 +29,7 @@
 ;;; USER INFO
 ;;; ======================================================================= ;;;
 (setq user-full-name "Cherish")
-(setq user-mail-address "cherishgww@ainirobot.com")
+(setq user-mail-address "guoweiwei@syriusrobotics.com")
 
 ;;; ======================================================================= ;;;
 ;;; INITIALIZE PEMACS
