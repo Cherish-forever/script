@@ -42,16 +42,13 @@ sudo apt-get update
 
 yes | sudo apt-get install libusb-dev
 yes | sudo apt-get install libusb-1.0-0-dev
-yes | sudo apt-get install zip
 
 yes | sudo apt-get build-depgcc
-yes | sudo apt-get install build-essential 
+
 
 yes | sudo apt-get install gcc-arm-linux-gnueabi
 yes | sudo apt-get install gcc-arm-linux-gnueabihf
 yes | sudo apt-get install gcc-arm-none-eabi
-
-yes | sudo apt-get install cmake autoconf automakex autoconf-archive autopoint
 
 yes | sudo apt install libssl-dev pkg-config
 
@@ -61,10 +58,10 @@ yes | sudo apt-get install libc6:i386 lib32ncurses5
 yes | sudo apt-get install unrar
 
 #echo 'install some libs for android'
-#yes | sudo apt-get install git-core gnupg flex bison gperf build-essential \
-#             zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+#yes | sudo apt-get install git-core gnupg flex bison gperf \
+#             zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
 #             lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
-#             libgl1-mesa-dev libxml2-utils xsltproc unzip device-tree-compiler
+#             libgl1-mesa-dev libxml2-utils xsltproc device-tree-compiler
 
 #echo 'install openjdk-7'
 #yes | sudo apt-get install openjdk-7-jre openjdk-7-jdk
@@ -79,9 +76,8 @@ yes | sudo apt-get install unrar
 #yes | sudo apt-get install oracle-java8-installer
 
 echo 'install....'
-yes | sudo apt-get install ant zlib1g-dev libtbb-dev libglew-dev libudev-dev freeglut3-dev ssh automake autoconf qt5-qmake libglew-dev freeglut3-dev libboost-all-dev
+yes | sudo apt-get install zlib1g-dev libtbb-dev libglew-dev libudev-dev freeglut3-dev ssh  qt5-qmake libglew-dev freeglut3-dev libboost-all-dev
 Y | sudo apt-get install python3-dev python3-pip python3-tk python3-lxml python3-six
-Y | sudo apt-get install llvm build-essential
 
 
 # SimplicityStudio_v4

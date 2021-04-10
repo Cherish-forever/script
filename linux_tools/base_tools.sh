@@ -15,7 +15,7 @@ echo '[color]
 	ui = auto' >> ~/.gitconfig
 
 # editer
-yes | sudo apt-get install vim emacs
+yes | sudo apt-get install vim emacs wget
 
 # browser
 if [ -f /tmp/google-chrome-stable_current_amd64.deb ];
@@ -33,7 +33,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 source ~/.zshrc
 
 # tools
-sudo -y apt install tree meld spyder ack-grep silversearcher-ag htop fd-find unity-tweak-tool axel
+sudo -y apt install tree meld spyder ack-grep silversearcher-ag htop fd-find unity-tweak-tool axel zip curl unzip
 alias top="sudo htop"
 
 # video download
