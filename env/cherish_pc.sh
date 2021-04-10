@@ -35,20 +35,12 @@ echo '         :,, , ::::::::i:::i:::i:i::,,,,,:,::i:i:::iir;@Secbone.ii:::'
 echo '	'
 echo '-->'
 
-sudo add-apt-repository --yes ppa:js-reynaud/kicad-5.1
 sudo apt-get update
 
 # git
 yes | sudo apt-get install git
 git config --global user.name "Cherish"
 git config --global user.email "851153978@qq.com"
-
-#echo '[url "ssh://Cherish@turtles.ninjia.cmcm.com:29418"]
-#	insteadOf = http://turtles.ninjia.cmcm.com/gerrit' >> ~/.gitconfig
-#echo '[review "turtles.ninjia.cmcm.com/gerrit"]
-#	username = Cherish' >> ~/.gitconfig
-#echo '[review "turtles.ninjia.cmcm.com/gerrit"]
-#	username = Cherish' >> ~/.gitconfig
 
 echo '[alias]
 	br = branch
@@ -128,28 +120,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 source ~/.zshrc
 
-# kicad
-Y | sudo apt install --install-suggests kicad
-mkdir ~/kicad_lib
-git clone https://github.com/KiCad/kicad-symbols.git ~/kicad_lib/kicad-symbols
-git clone https://github.com/KiCad/kicad-footprints.git ~/kicad_lib/kicad-footprints
-git clone https://github.com/KiCad/kicad-packages3D.git ~/kicad_lib/kicad-packages3D
-git clone https://github.com/KiCad/kicad-templates.git ~/kicad_lib/kicad-templates
-
 # SimplicityStudio_v4
 Y | sudo apt-get install libwebkitgtk-1.0-0
 
 #echo 'install opencv'
 #yes | sudo apt-get build-dep opencv
 
-#echo '/****************************************************************/'
-#echo '/*         Hello Sir if you want connect to our server          */'
-#echo '/*         please add blew message to /etc/hosts                */'
-#echo '172.18.193.21 turtles.ninjia.cmcm.com'
-#echo '10.60.82.30 gerrit.kisops.com'
-#echo '/****************************************************************/'
-#
-#echo '/*                        System Init Done                      */'
-#
-cd ..
+cd ~
 
