@@ -37,22 +37,6 @@ echo '-->'
 
 sudo apt-get update
 
-# git
-yes | sudo apt-get install git
-git config --global user.name "Cherish"
-git config --global user.email "851153978@qq.com"
-
-echo '[alias]
-	br = branch
-	co = checkout
-	st = status
-	ci = commit' >> ~/.gitconfig
-
-echo '[color]
-	ui = auto' >> ~/.gitconfig
-
-yes | sudo apt-get install vim emacs
-
 # quem
 #yes | sudo apt-get install qemu qemu-system-x86 qemu-system-arm
 
@@ -70,16 +54,6 @@ yes | sudo apt-get install gcc-arm-none-eabi
 yes | sudo apt-get install cmake autoconf automakex autoconf-archive autopoint
 
 yes | sudo apt install libssl-dev pkg-config
-
-cd temp/
-if [ -f temp/google-chrome-stable_current_amd64.deb ];
-then
-    echo 'google-chrome-stable_current_amd64.deb has been download'
-else
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    sudo dpkg -i google-chrome*
-    yes | sudo apt-get -f install 
-fi
 
 echo 'install lib for AC6 STM32'
 yes | sudo apt-get install libc6:i386 lib32ncurses5
@@ -109,16 +83,6 @@ yes | sudo apt-get install ant zlib1g-dev libtbb-dev libglew-dev libudev-dev fre
 Y | sudo apt-get install python3-dev python3-pip python3-tk python3-lxml python3-six
 Y | sudo apt-get install llvm build-essential
 
-sudo pip install shadowsocks you-get
-
-# tools
-yes | sudo apt-get install tree meld spyder ack-grep silversearcher-ag htop fd-find unity-tweak-tool
-alias top="sudo htop"
-
-# ctrl + R
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-source ~/.zshrc
 
 # SimplicityStudio_v4
 Y | sudo apt-get install libwebkitgtk-1.0-0
