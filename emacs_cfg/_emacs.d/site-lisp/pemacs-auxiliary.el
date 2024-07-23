@@ -3,13 +3,6 @@
 (unless (eq system-type 'windows-nt)
   (require 'xcscope))
 
-;; flymake
-(when (load-file
-       (concat pemacs-install-dir "extensions/flymake/flymake.el"))
-  (load-library "flymake-cursor"))
-;; enable flymake if possible
-(add-hook 'find-file-hook 'flymake-find-file-hook)
-
 ;;; Generic helper function for flymake checker
 (defun pemacs-flymake-generic-init (cmd &optional opts)
   (let* ((temp-file (flymake-init-create-temp-buffer-copy
