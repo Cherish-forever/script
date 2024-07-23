@@ -26,4 +26,6 @@
 ;;;(require 'pemacs-org-init)
 (require 'pemacs-python-edit)
 
+(require 'pemacs-remove-blackspace)
+
 (provide 'pemacs-init)
