@@ -1,7 +1,5 @@
 #!/bin/bash
 
-git archive --format=tar --prefix=pemacs/ HEAD | gzip > /tmp/pemacs.tar.gz
-
 if [[ -a ${HOME}/.emacs ]]; then
 	mv ${HOME}/.emacs ${HOME}/_emacs.bak
 fi
@@ -10,6 +8,6 @@ if [[ -a ${HOME}/.emacs.d ]]; then
 	mv ${HOME}/.emacs.d ${HOME}/_emacs.d.bak
 fi
 
-tar xf /tmp/pemacs.tar.gz -C /tmp/
-mv /tmp/pemacs/_emacs ${HOME}/.emacs
-mv /tmp/pemacs/_emacs.d ${HOME}/.emacs.d
+cp `pwd`/_emacs ${HOME}/.emacs
+cp -r `pwd`/_emacs.d ${HOME}/.emacs.d
+
