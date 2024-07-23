@@ -36,8 +36,9 @@
         (space-mark 3872 [3876] [95])
         (newline-mark 10 [8629 10])    ; newlne
         ;;(newline-mark 10 [182 10])   ; newlne
-        (tab-mark 9 [187 9] [92 9])    ; tab
+        ;;(tab-mark 9 [187 9] [92 9])    ; tab
         ;;(tab-mark 9 [9655 9] [92 9]) ; tab
+	(tab-mark   ?\t   [?\xBB ?\t] [?\\ ?\t])
         ))
 ;;; let tab and trailing whitespace be visiable
 ;; (setq whitespace-style '(trailing tabs tab-mark newline-mark))
