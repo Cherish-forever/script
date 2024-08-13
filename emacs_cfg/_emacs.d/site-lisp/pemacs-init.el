@@ -20,6 +20,7 @@
 (require 'pemacs-vcs)
 (require 'pemacs-auxiliary)
 (require 'kernel-c-style)
+(require 'ld-mode)
 
 ;; for each major mode
 (require 'pemacs-cc-edit)
